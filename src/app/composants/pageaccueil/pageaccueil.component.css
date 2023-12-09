@@ -1,0 +1,409 @@
+/* baniere */
+
+/* banieretexte */
+.container{
+  margin-top: 8% !important;
+}
+.banieretitre{
+  background-color: #19375C;
+  color: white;
+  height: 250px;
+  width: 90%;
+  border-top:16px solid #FF9700 ;
+  border-radius: 55px 0 55px 0;
+  margin-left: 7%;
+}
+.banieretitre h5,p {
+  color: white;
+}
+.banieretitre h5{
+  font-size: 40px;
+  text-align: center;
+  text-shadow:3px 3px black;
+  font-weight: bold;
+}
+.banieretitre p{
+  font-size: 24px;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+/* baniereimage */
+.baniereimg img {
+  height: 160px;
+  border-radius: 60px 0 60px 0;
+  box-shadow: 3px 3px #FF9700;
+  margin-left: 22%;
+}
+.baniereimage1{
+  height: 160px;
+  border-radius: 60px 0 60px 0;
+  box-shadow: 3px 3px #FF9700;
+  margin-left: 24%;
+  margin-top: 18%;
+}
+
+/* bloc de bonnes raison */
+
+/* bloc de bonnes raisoncontenant */
+.raisonchoisir{
+  /* margin: 2%; */
+  margin-top: 8%;
+  display: grid;
+  grid-template-columns: auto auto;
+  /* gap: 3%; */
+  align-items: center;
+  width: 88%;
+  /* border: 2px solid; */
+}
+.contour{
+  border: 5px solid #FF9700;
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  transform: rotate(45deg);
+  border-radius: 25px;
+  margin-left: 35%;
+}
+.contenant{
+  background-color: #19375C;
+  height: 150px;
+  width: 150px;
+  border-radius: 25px;
+  margin: 10.5%;
+}
+/* .iconchoisir{
+  border: 2px solid;
+} */
+.iconchoisir div{
+  width: 130%;
+  height: 35%;
+  border-top-left-radius: 20px;
+  animation-name: example;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  100%   {transform: rotate(360deg);}
+}
+
+.iconchoisir div i{
+  font-size: 38px;
+  color: #19375C;
+  margin: 15%;
+}
+.bag{
+  border: 4px solid #FF9700;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  top: -50px;
+  left: -185px;
+}
+.direction{
+  border: 4px solid #FF9700;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  top: 25px;
+  left: -40px;
+}
+.hand{
+  border: 4px solid #FF9700;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  top: 110px;
+  left: -190px;
+}
+.book{
+  border: 4px solid #FF9700;
+  width: 100%;
+  background-color: white;
+  position: relative;
+  top: -100px;
+  left: -335px;
+}
+/* bloc de bonnes raisontexte */
+.raisonchoisirtext {
+  margin-left: 3%;
+  /* border: 2px solid; */
+}
+.raisonchoisirtext p{
+  color: black;
+  text-align: justify;
+  margin-top: 2%;
+  font-size: 20px;
+}
+.raisonchoisirtext i{
+  color:#19375C;
+  margin-right: 2%;
+  font-size: 25px;
+}
+.raisonchoisirtext h5{
+  /* border: 2px solid; */
+  font-size: 35px;
+  color: #FF9700;
+  font-weight: bold;
+}
+
+
+/* La section des 3 informations  */
+.sectioninformations{
+  margin-top: 8% !important;
+  width: 90%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 7%;
+  justify-content: center;
+  border: 0.5px solid #FF9700;
+  box-shadow:9px 9px #19375C;
+  margin: 5%;
+  padding-bottom: 17px;
+}
+.sectioninformations h4{
+  font-size: 18px;
+  color: #19375C;
+  font-weight: bold;
+}
+.sectioninformations p{
+  font-size: 20px;
+  color:black;
+  text-align: justify;
+  margin-top: 3%;
+}
+.sectioninformations i{
+  color: #FF9700;
+  font-size: 38px;
+}
+.blocfichier{
+  margin-top: 4%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.fichier{
+  background-color: #19375C;
+  width: 100px;
+  border-radius: 30px 30px 30px 0;
+}
+.fichier i{
+  margin: 20%;
+}
+.blocgens{
+  margin-top: 4%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.gens{
+  background-color: #19375C;
+  width: 100px;
+  border-radius: 30px 30px 30px 0;
+}
+.gens i{
+  margin: 20%;
+}
+.blocpartage{
+  margin-top: 4%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+}
+.partage{
+  background-color: #19375C;
+  width: 80px;
+  border-radius: 30px 30px 30px 0;
+}
+.partage i{
+  margin: 20%;
+}
+
+/* section image texte */
+.blocimagetext{
+  margin-top: 8%;
+  margin-left: 5%;
+  width: 90%;
+}
+.imagetext{
+  background-color: #19375C;
+  border-right: 12px solid #FF9700;
+  border-bottom: 12px solid #FF9700;
+  border-radius: 0 70px 0 70px;
+  padding: 25px;
+}
+.imagetext img{
+  height: 280px;
+}
+.imagetext h4{
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+  margin-left: 5%;
+}
+.imagetext p{
+  font-size: 20px;
+  margin-top: 4%;
+  margin-left: 5%;
+}
+
+/* faire part des projets */
+.fairepart{
+  display: flex;
+  gap: 12%;
+  margin-top: 8%;
+  padding-bottom: 4%;
+}
+.fairepart h2{
+  font-size: 38px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+.fairepart button{
+  font-size: 20px;
+  background-color: transparent;
+  border: 2px solid #FF9700;
+  border-radius: 30px;
+  padding: 2px 20px;
+  font-weight: bold;
+  margin-left: 30%;
+
+}
+.bloccartprojet{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  gap: 10px;
+  /* width: 80%; */
+}
+.cartprojetdiv{
+  width: 80%;
+  height: 300px;
+  border: 5px solid #19375C;
+  background-color: white;
+  margin: 7%;
+}
+.cartprojet{
+  width: 80%;
+  height: 300px;
+  border: 3px solid #19375C;
+  position: relative;
+  top: -300px;
+  left: 40px;
+  background-color:white;
+}
+.contenantcartprojet{
+  background-color: #FF9700;
+  height: 60px;
+  border-radius:0 50px 50px 0;
+  box-shadow: 6px 6px #19375c80;
+  position: relative;
+  left: -24px;
+  top: 9px;
+  width: 90%;
+}
+.contenantcartprojet h5{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 5%;
+}
+.cartprojet p{
+  color: black;
+  font-size: 15px;
+  /* border: 2px solid; */
+  margin: 0 auto;
+  margin-top: 15%;
+  text-align: justify;
+  width: 90%;
+  /* padding-top: 20%; */
+}
+
+/*La dernière section imageTexte  */
+.blocchancesdereussir{
+  margin-top: -15%;
+  display: flex;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+  /* border: 2px solid; */
+  margin-left: 5%;
+}
+.chancesdereussir{
+  border-top:15px solid #19375C;
+  border-left:15px solid #19375C;
+  box-shadow: 15px 10px #FF9700;
+  border-radius: 50px;
+  height: 550px;
+  width: 65%;
+}
+.chancesdereussirimg img{
+  height: 200px;
+  width: 70%;
+  border-top:10px solid #19375C;
+  border-left:10px solid #19375C;
+  box-shadow: 10px 8px #FF9700;
+  border-radius: 50px !important;
+  /* border: 2px solid; */
+  /* width: 100%; */
+}
+.chancesdereussir h5{
+  font-size: 38px;
+}
+.chancesdereussir p{
+  font-size: 20px;
+  color: black;
+}
+.chancesdereussir i{
+  font-size: 22px;
+  color: #FF9700;
+}
+
+/* portable */
+@media screen and (max-width: 575px) {
+  /* banieretexte */
+  .container{
+    margin-top: 10% !important;
+    display: flex;
+    grid-template-columns: auto;
+  }
+  .banieretitre{
+    background-color: #19375C;
+    color: white;
+    height: 200px;
+    width: 100%;
+    border-top:16px solid #FF9700 ;
+    border-radius: 55px 0 55px 0;
+    margin-left: 7%;
+  }
+  .banieretitre h5,p {
+    color: white;
+  }
+  .banieretitre h5{
+    font-size: 20px;
+    text-align: center;
+    text-shadow:3px 3px black;
+    font-weight: bold;
+  }
+  .banieretitre p{
+    font-size: 14px;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+  .baniereimg img {
+    height: 100px;
+    border-radius: 60px 0 60px 0;
+    box-shadow: 3px 3px #FF9700;
+    margin-left: 22%;
+  }
+  .baniereimage1{
+    height: 100px;
+    border-radius: 60px 0 60px 0;
+    box-shadow: 3px 3px #FF9700;
+    margin-left: 24%;
+    margin-top: 18%;
+  }
+
+}

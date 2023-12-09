@@ -1,0 +1,87 @@
+.text-small {
+  font-size: 0.9rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+/* .form-control{
+  width: 90%;
+} */
+
+
+
+
+
+footer {
+  background: #fff;
+}
+.logofooter{
+  background: #19375C;
+  height: 220px;
+  /* width: 10%; */
+}
+.logofooter img{
+  padding-top: 40px;
+}
+.hauteur{
+  height: 220px;
+}
+
+.text-muted li a{
+  color: #ff9700;
+  margin-left: 40px;
+
+}
+.text-custom{
+  text-decoration: underline;
+  color: #ff9700;
+  margin-left: 20px;
+
+
+}
+.lien{
+  padding-top: 30px;
+}
+ .text-muted li a:hover {
+   color: #19375C;
+ }
+
+
+
+/* ==========================================
+    CUSTOM UTILS CLASSES
+  ========================================== */
+/* body,
+html {
+  height: 100%;
+} */
+i {
+  margin-left: 20px;
+  border: 10px;
+}
+.newletter{
+  background: #19375C;
+  color: #ff9700;
+  width: 90%;
+}
+
+#trait {
+  display: flex;
+  justify-content: center;
+
+
+}
+
+#line {
+  width: 50%;
+  border: 1px solid #ff9700;
+  margin-top: 20px;
+}

@@ -1,0 +1,78 @@
+.liste{
+  margin-top: 8%;
+  font-weight: bold;
+  font-size: 40px;
+}
+.bloccarte{
+  display: flex;
+  grid-template-columns: auto auto;
+  margin:0 auto;
+  width: 75%;
+  gap: 7%;
+}
+.carte{
+  border: 3px solid #19375C;
+  box-shadow: 8px 8px #19375C;
+  height: 700px;
+  width: 40%;
+}
+.carte h5{
+  font-size: 38px;
+  font-weight: bold;
+}
+.carte p{
+  font-size: 20px;
+  text-align: justify;
+  width: 90%;
+  margin:0 auto;
+}
+.contenat{
+  background-color: #FF9700;
+  height: 70px;
+  width: 20%;
+  margin-left: 80%;
+  border-radius: 0 0 0 40px;
+  box-shadow:0 10px #ff99008d;
+}
+.contenant{
+  background-color: #FF9700;
+  height: 70px;
+  width: 20%;
+  margin-top: 9.4%;
+  border-radius: 0 40px 0 0;
+  box-shadow: 10px 0 #ff99008d;
+}
+
+.carte2{
+  margin-top: 40%;
+  border: 3px solid #19375C;
+  box-shadow: 8px 8px #19375C;
+  height: 700px;
+  width: 40%;
+}
+.carte2 h5{
+  font-size: 38px;
+  font-weight: bold;
+}
+.carte2 p{
+  font-size: 20px;
+  text-align: justify;
+  width: 90%;
+  margin:0 auto;
+}
+.contenat2{
+  background-color: #FF9700;
+  height: 70px;
+  width: 20%;
+  margin-left: 80%;
+  border-radius: 0 0 0 40px;
+  box-shadow:0 10px #ff99008d;
+}
+.contenant2{
+  background-color: #FF9700;
+  height: 70px;
+  width: 20%;
+  margin-top: 9.4%;
+  border-radius: 0 40px 0 0;
+  box-shadow: 10px 0 #ff99008d;
+}

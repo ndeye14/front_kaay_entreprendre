@@ -1,0 +1,63 @@
+<nav class="navbar fixed-top">
+  <!-- <h2 class="logo"><a href="#">CodingNepal</a></h2> -->
+  <img src="assets/logo.png" alt="" style="width: 150px;">
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" id="hamburger-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+      <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </svg>
+  </label>
+  <ul class="links">
+    <li><a href="#">Accueil</a></li>
+    <li><a href="#">Projets</a></li>
+    <li><a routerLink="/forum" class="active">Forum</a></li>
+    <li><a href="#">A propos</a></li>
+    <li><a href="#"  data-bs-toggle="modal" data-bs-target="#exampleModal">Soumettre un projet</a></li>
+  </ul>
+  <div class="buttons">
+    <button class="btn btn-custom" >Deconnecter</button>
+    <!-- <a href="#" class="signin">Connecter</a> -->
+
+  </div>
+</nav>
+
+<!-- modal -->
+<!-- Button trigger modal -->
+<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button> -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sousmission projet</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="titreInput" class="form-label">Titre </label>
+          <input type="text" name="titre" class="form-control" id="titreInput">
+        </div>
+        <div class="form-floating mb-3">
+          <label for="floatingInput">Description</label>
+          <input type="text" class="form-control" id="floatingInput" placeholder="description">
+        </div>
+        
+        <div class="mb-3">
+          <label for="objectifInput" class="form-label">Objectif </label>
+          <input type="text" name="objectif" class="form-control" id="objectifInput">
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+

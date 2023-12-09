@@ -1,0 +1,131 @@
+/* baniere */
+.aboutus{
+  margin-top: 5% !important;
+  background-color: #19375C;
+  color: white;
+  height: 300px;
+  border-radius:0px 60px 0 60px ;
+  width: 90%;
+  margin:0 auto;
+}
+.aboutus h1{
+  font-size: 80px;
+  padding: 8%;
+}
+.contenantapropos1{
+  background-color: #FF9700;
+  height: 70px;
+  width: 30%;
+  border-radius: 0 50px 50px 0;
+  position: relative;
+  top: 150px;
+  left: 67px;
+}
+.contenantapropos2{
+  background-color: #FF9700;
+  height: 70px;
+  width: 30%;
+  border-radius: 50px 0 0 50px;
+  position: relative;
+  top: -82px;
+  right: -877px;
+}
+
+/* présentation */
+.containerapropos{
+  margin-top: 20%;
+  background-color: #FF9700;
+  height: 670px;
+  width: 14.5% !important;
+  border-radius: 0 80px 0 0;
+  position: relative;
+  right: -82px;
+  top: -14px;
+}
+.blocaboutus{
+  display: flex;
+  grid-template-columns: auto auto;
+  margin-left: 10%;
+}
+.blocaboutus img{
+  height: 400px;
+  width: 400px;
+  border:2px solid #19375C;
+}
+.blocpresentation{
+  margin-top: 30%;
+  background-color: #19375C;
+  height: 670px;
+  width: 550px;
+  border-radius: 0 0 70px 0;
+  /* margin-left: 11%; */
+}
+.blocpresentation h5{
+  color:#FF9700;
+  font-size: 38px;
+  padding: 4%;
+}
+.blocpresentation p{
+  width:76%;
+  margin-left: 17% !important;
+  text-align: justify;
+  color: white;
+  font-size: 20px;
+  /* border: 2px solid; */
+}
+
+/* cible */
+.bloccible{
+  display: flex;
+  grid-template-columns: auto auto;
+  /* margin-left: 10%; */
+}
+.containercible{
+  margin-top: 8%;
+  background-color: #FF9700;
+  height: 670px;
+  width: 14.5% !important;
+  border-radius: 0 80px 0 0;
+  position: relative;
+  right: -82px;
+  top: -12px;
+}
+.bloccible img{
+  height: 400px;
+  width: 400px;
+  border:2px solid #19375C;
+  margin-left: 45%;
+  margin-top: 100%;
+}
+.blocdefinircible{
+  margin-top: 10%;
+  background-color: #19375C;
+  height: 670px;
+  width: 550px;
+  border-radius: 0 0 70px 0;
+  /* margin-left: 11%; */
+}
+.blocdefinircible h5{
+  color:#FF9700;
+  font-size: 38px;
+  padding: 4%;
+}
+.blocdefinircible p{
+  width:76%;
+  margin-left: 17% !important;
+  text-align: justify;
+  color: white;
+  font-size: 20px;
+  /* border: 2px solid; */
+}
+.blocdefinircible i{
+  font-size: 20px;
+  color: #FF9700;
+}
+
+/* portable */
+@media screen and (max-width: 575px)  {
+
+
+}
+
