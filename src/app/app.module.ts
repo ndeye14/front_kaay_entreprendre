@@ -16,6 +16,7 @@ import { ProjetsComponent } from './composants/projets/projets.component';
 import { ForumComponent } from './composants/forum/forum.component';
 
 import { MenuComponent } from './composants/menu/menu.component';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { MenuComponent } from './composants/menu/menu.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
