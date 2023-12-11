@@ -15,6 +15,7 @@ import { ProfilComponent } from './composants/profil/profil.component';
 import { PageaccueilComponent } from './composants/pageaccueil/pageaccueil.component';
 import { AproposComponent } from './composants/apropos/apropos.component';
 import { ProjetsComponent } from './composants/projets/projets.component';
+import { RessourcesComponent } from './composants/ressources/ressources.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'pageacceuil', component: PageaccueilComponent },
   { path: 'apropos', component: AproposComponent },
   { path:'projets', component: ProjetsComponent },
+  {path: 'ressources', component: RessourcesComponent },
 
   { path: 'forum', component: ForumComponent },
 

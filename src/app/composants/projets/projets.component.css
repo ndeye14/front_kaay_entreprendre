@@ -1,3 +1,10 @@
+div .carte{
+  width: 300px;
+  height: 500px;
+  border: 1px solid #ff99008d;
+  overflow: auto;
+  /* background-color: #ff99008d; */
+}
 .liste{
   margin-top: 8%;
   font-weight: bold;
@@ -14,7 +21,7 @@
   border: 3px solid #19375C;
   box-shadow: 8px 8px #19375C;
   height: 700px;
-  width: 40%;
+  width: 50%;
 }
 .carte h5{
   font-size: 38px;
@@ -43,8 +50,15 @@
   box-shadow: 10px 0 #ff99008d;
 }
 
+div .carte2{
+  width: 300px;
+  height: 500px;
+  /* background-color: #ff99008d; */
+  border: 1px solid #ff99008d;
+  overflow: auto;
+}
 .carte2{
-  margin-top: 40%;
+  margin-top: 30%;
   border: 3px solid #19375C;
   box-shadow: 8px 8px #19375C;
   height: 700px;

@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -16,6 +17,8 @@ import { ProjetsComponent } from './composants/projets/projets.component';
 import { ForumComponent } from './composants/forum/forum.component';
 
 import { MenuComponent } from './composants/menu/menu.component';
+import { RessourcesComponent } from './composants/ressources/ressources.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,15 +36,20 @@ import { MenuComponent } from './composants/menu/menu.component';
     ProjetsComponent,
 
 
+
     ForumComponent,
 
-    MenuComponent
+    MenuComponent,
+    RessourcesComponent
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
