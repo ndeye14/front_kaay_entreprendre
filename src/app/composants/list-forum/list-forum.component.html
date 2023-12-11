@@ -1,0 +1,130 @@
+<app-header-connecte></app-header-connecte>
+<br>
+<br>
+<br>
+<br><br>
+<div class="container">
+  <div class="forum mb-3">
+    Bienvenue sur notre forum de discussion ! Afin de maintenir un environnement respectueux et propice à des discussions
+    enrichissantes, nous vous prions de respecter les règles.Soyez respectueux envers tous les membres du forum,
+    indépendamment de leurs opinions, croyances ou origines.
+
+  </div>
+
+    <div class="listforum">
+      <button type="button" id="button">Domaine d'activite</button>
+      <button type="button" id="button" data-bs-toggle="modal" data-bs-target="#Modal">Ajouter commentaire</button>
+    </div>
+  </div>
+
+  <div>
+    <h4 class="text-center mt-3"> Questions tagges</h4>
+    <div class="container bootstrap snippets bootdey">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="blog-comment">
+            <h3 class="text-custom">Comments</h3>
+            <hr />
+            <ul class="comments">
+              <li class="clearfix">
+                <img src="https://bootdey.com/img/Content/user_1.jpg" class="avatar" alt="">
+                <div class="post-comments">
+                  <p class="meta">Dec 18, 2014 <a href="#"  >JohnDoe</a> says : <i class="pull-right"><a
+                        href="#" data-bs-toggle="modal" data-bs-target="#projet"><i class="fa-solid fa-comment fa-xs" style="color: #474d57;"></i></a></i></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam a sapien odio, sit amet
+                  </p>
+                </div>
+              </li>
+              <li class="clearfix">
+                <img src="https://bootdey.com/img/Content/user_2.jpg" class="avatar" alt="">
+                <div class="post-comments">
+                  <p class="meta">Dec 19, 2014 <a href="#">JohnDoe</a> says : <i class="pull-right">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#projet"><i class="fa-solid fa-comment fa-xs" style="color: #474d57;"></i></a></i></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Etiam a sapien odio, sit amet
+                  </p>
+                </div>
+
+                <ul class="comments">
+                  <li class="clearfix">
+                    <img src="https://bootdey.com/img/Content/user_3.jpg" class="avatar" alt="">
+                    <div class="post-comments">
+                      <p class="meta">Dec 20, 2014 <a href="#">JohnDoe</a> says : <i class="pull-right">
+                            <a href="#"  data-bs-toggle="modal" data-bs-target="#projet"><i class="fa-solid fa-comment fa-xs" style="color: #474d57;"></i></a></i></p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Etiam a sapien odio, sit amet
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Ajout commentaire</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="titreInput" class="form-label">Titre </label>
+            <input type="text" name="titre" class="form-control" id="titreInput">
+          </div>
+          <div class="form-floating mb-3">
+            <label for="floatingInput">Description</label>
+            <input type="text" class="form-control" id="floatingInput" placeholder="description">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-primary">Publier</button>
+          <button type="button" class="btn btn-outline-primary">Ajout fichier</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <app-footer></app-footer>
+  <!-- modal 2 -->
+  <div class="modal fade" id="projet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">repondre commentaire</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-floating mb-3">
+            <!-- <label for="floatingInput">Description</label> -->
+            <input type="text" class="form-control" id="floatingInput" placeholder="">
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-outline-primary">Envoyer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+

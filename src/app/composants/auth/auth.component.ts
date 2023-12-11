@@ -20,7 +20,7 @@ export class AuthComponent {
 
 
   // On fait appel au constructeur
-   constructor( private route: Router) {}
+   constructor( private route: Router,private authService:AuthService) {}
   ngOnInit(): void {
 
   }
