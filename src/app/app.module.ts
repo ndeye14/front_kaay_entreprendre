@@ -18,9 +18,13 @@ import { ProjetsComponent } from './composants/projets/projets.component';
 import { ForumComponent } from './composants/forum/forum.component';
 
 import { MenuComponent } from './composants/menu/menu.component';
+
 import { LoginComponent } from './composants/auth/login/login.component';
 import { SignupComponent } from './composants/auth/signup/signup.component';
 import { ListForumComponent } from './composants/list-forum/list-forum.component';
+
+import { CommonModule } from '@angular/common';
+
 
 
 @NgModule({
@@ -50,8 +54,12 @@ import { ListForumComponent } from './composants/list-forum/list-forum.component
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     HttpClientModule,
     ReactiveFormsModule,
+
+    CommonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
