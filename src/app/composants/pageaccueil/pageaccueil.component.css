@@ -38,6 +38,7 @@
   border-radius: 60px 0 60px 0;
   box-shadow: 3px 3px #FF9700;
   margin-left: 22%;
+  
 }
 .baniereimage1{
   height: 160px;
@@ -52,7 +53,7 @@
 /* bloc de bonnes raisoncontenant */
 .raisonchoisir{
   margin: 2%;
-  margin-top: 3%;
+  margin-top: 5%;
   display: flex;
   grid-template-columns: auto auto;
   /* gap: 3%; */
@@ -149,8 +150,10 @@
 }
 .raisonchoisirtext i{
   color:#19375C;
+  margin-top: 2%;
   margin-right: 2%;
-  font-size: 25px;
+  font-size: 23px;
+  align-content: center;
 }
 .raisonchoisirtext h5{
   /* border: 2px solid; */
@@ -162,7 +165,7 @@
 
 /* La section des 3 informations  */
 .sectioninformations{
-  margin-top: 8% !important;
+  margin-top: 2% !important;
   width: 90%;
   display: grid;
   grid-template-columns: auto auto auto;
@@ -377,12 +380,9 @@
   /* banieretexte */
   .container{
     flex-direction: column;
-    /* display:grid;
-    grid-template-columns: auto;
-    margin:0 auto; */
   }
   .banieretitre{
-    margin-top: 3% !important;
+    margin-top: 1% !important;
     background-color: #19375C;
     color: white;
     height: 150px;
@@ -420,118 +420,46 @@
     border-radius: 40px 0 40px 0;
     box-shadow: 2px 2px #FF9700;
     margin-left: 10%;
-    margin-top: 10%;
+    margin-top: 1%;
   }
 
 /* bloc de bonnes raison */
 
 /* bloc de bonnes raisoncontenant */
 
-.raisonchoisir{
-  /* margin: 2%; */
-  margin-top: 8%;
-  display: grid;
-  grid-template-columns: auto;
-  /* gap: 3%; */
+.raisonchoisir {
+  flex-direction: column; /* Aligner les éléments en colonne */
   align-items: center;
-  width: 100%;
-  /* border: 2px solid; */
-}
-.contour{
-  border: 5px solid #FF9700;
-  background-color: white;
-  height: 150px;
-  width: 150px;
-  transform: rotate(45deg);
-  border-radius: 16px;
-}
-.contenant{
-  background-color: #19375C;
-  height: 100px;
-  width: 100px;
-  border-radius: 16px;
-  margin: 13%;
-}
-.iconchoisir div{
-  width: 14%;
-  height: 43px;
-  border-top-left-radius: 18px;
-  animation-name: example;
-  animation-duration: 8s;
-  animation-iteration-count: infinite;
+  margin-top: 15%;
 }
 
-@keyframes example {
-  100%   {transform: rotate(360deg);}
+.contenucontenant {
+  margin-left: 0; /* Réinitialiser la marge à gauche */
 }
 
-.iconchoisir div i{
-  font-size: 28px;
-  color: #19375C;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.bag{
-  border: 3px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  margin: 0 auto;
-  position: relative;
-  top: -200px;
-  left: -5px;
-}
-.direction{
-  border: 3px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  margin: 0 auto;
-  position: relative;
-  top: -140px;
-  left: 110px;
-}
-.hand{
-  border: 3px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  margin: 0 auto;
-  position: relative;
-  top: -80px;
-  left: -1px;
-}
-.book{
-  border: 3px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  margin: 0 auto;
-  position: relative;
-  top: -225px;
-  left: -116px;
+.iconchoisir div {
+  width: 30%; /* Prend toute la largeur */
+  margin: 10px 10; /* Ajout de marge en haut et en bas */
 }
 /* bloc de bonnes raisontexte */
 .raisonchoisirtext {
-  margin-top: -24% !important;
-  margin:0 auto;
-  width: 90%;
+  margin-top: -80px;
+  width: 95%;
 }
 .raisonchoisirtext p{
   color: black;
   text-align: justify;
   margin-top: 2%;
-  font-size: 15px;
-}
-.raisonchoisirtext i{
-  color:#19375C;
-  margin-right: 2%;
-  font-size: 20px;
+  font-size: 18px;
 }
 .raisonchoisirtext h5{
   /* border: 2px solid; */
-  font-size: 22px;
+  font-size: 25px;
   color: #FF9700;
   font-weight: bold;
 }
+
+
 
 /* La section des 3 informations  */
 .sectioninformations{
@@ -585,7 +513,7 @@
   gap: 5%;
   align-items: center;
   margin-top: -5px;
-  border: 2px solid;
+  /* border: 2px solid; */
 }
 .partage{
   background-color: #19375C;
@@ -623,8 +551,7 @@
 
 /* faire part des projets */
 .fairepart{
-  display: flex;
-  gap: 5%;
+  display: grid;
   margin-top: 8%;
   padding-bottom: 4%;
 }
@@ -638,7 +565,8 @@
   background-color: transparent;
   border: 2px solid #FF9700;
   border-radius: 20px;
-  padding: 2px 10px;
+  padding: 8px 10px;
+  width: 30%;
   font-weight: bold;
   margin-left: 1.5%;
 
@@ -655,7 +583,6 @@
   height: 300px;
   border: 5px solid #19375C;
   background-color: white;
-  /* margin: 7%; */
 }
 .cartprojet{
   width: 80%;
@@ -673,7 +600,7 @@
   border-radius:0 50px 50px 0;
   box-shadow: 6px 6px #19375c80;
   position: relative;
-  left: -24px;
+  left: -21.5px;
   top: 9px;
   width: 90%;
 }
@@ -685,12 +612,10 @@
 .cartprojet p{
   color: black;
   font-size: 15px;
-  /* border: 2px solid; */
   margin: 0 auto;
   margin-top: 15%;
   text-align: justify;
   width: 90%;
-  /* padding-top: 20%; */
 }
 
 /*La dernière section imageTexte  */
@@ -698,7 +623,6 @@
   margin-top: 50%;
   display: grid;
   grid-template-columns: auto ;
-  /* margin:0 auto !important; */
 }
 .chancesdereussir{
   border-top:13px solid #19375C;
@@ -739,119 +663,60 @@
 
 /* banieretexte */
 .container{
-  margin-top: 15% !important;
-  display: flex;
-  grid-template-columns: auto auto ;
+  display: grid;
+  grid-template-columns: auto;
 }
 .banieretitre{
   background-color: #19375C;
   color: white;
-  height: 190px;
-  width: 100%;
+  height: 200px;
+  width: 700px !important;
   border-top:16px solid #FF9700 ;
-  border-radius: 50px 0 50px 0;
-  /* margin-left: 1% !important; */
+  border-radius: 60px 0 60px 0;
+  margin-left: 11%;
+  
 }
 .banieretitre h5{
-  font-size: 30px;
-  text-align: center;
-  text-shadow:2px 2px black;
-  font-weight: bold;
+  font-size: 36px;
 }
 .banieretitre p{
   font-size: 20px;
-  width: 96%;
-  margin:0 auto;
-  text-align: center;
 }
 
 /* baniereimage */
 .baniereimg img {
-  height: 120px;
-  border-radius: 35px 0 35px 0;
+  height: 160px;
+  border-radius: 60px 0 60px 0;
   box-shadow: 3px 3px #FF9700;
-  margin-left: 40% !important;
 }
 .baniereimage1{
-  height: 120px;
-  border-radius: 35px 0 35px 0;
+  height: 160px;
+  border-radius: 60px 0 60px 0;
   box-shadow: 3px 3px #FF9700;
-  margin-left: 15% !important;
-  margin-top: 18%;
+  display: flex;
+  align-items: center;
 }
-
 /* bloc de bonnes raison */
 
 /* bloc de bonnes raisoncontenant */
-.raisonchoisir{
-  /* margin: 2%; */
-  margin-top: 8%;
-  display: flex;
-  grid-template-columns: auto auto ;
-  /* gap: 3%; */
+.raisonchoisir {
+  flex-direction: column; 
   align-items: center;
-  width: 95%;
-  /* border: 2px solid; */
-}
-.contour{
-  border: 5px solid #FF9700;
-  background-color: white;
-  height: 170px;
-  width: 170px;
-  transform: rotate(45deg);
-  border-radius: 20px;
-  margin-left: 30%;
-}
-.contenant{
-  background-color: #19375C;
-  height: 120px;
-  width: 120px;
-  border-radius: 20px;
-  margin: 13%;
+  margin-top: 15%;
 }
 
-.iconchoisir div i{
-  font-size: 28px;
-  color: #19375C;
-  margin: 15%;
+.contenucontenant {
+  margin-left: 0; 
 }
-.bag{
-  border: 4px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  top: -50px;
-  left: -114px;
-}
-.direction{
-  border: 4px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  top: 25px;
-  left: -5px;
-}
-.hand{
-  border: 4px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  top: 95px;
-  left: -110px;
-}
-.book{
-  border: 4px solid #FF9700;
-  width: 100%;
-  background-color: white;
-  position: relative;
-  top: -75px;
-  left: -240px;
+
+.iconchoisir div {
+  width: 30%; 
+  margin: 10px 20; 
 }
 /* bloc de bonnes raisontexte */
 .raisonchoisirtext {
-  margin-left: 5%;
-  width: 62%;
-  /* border: 2px solid; */
+  margin-top: -80px;
+  width: 95%;
 }
 .raisonchoisirtext p{
   color: black;
@@ -859,26 +724,24 @@
   margin-top: 2%;
   font-size: 18px;
 }
-.raisonchoisirtext i{
-  color:#19375C;
-  /* margin-right: 2%; */
-  font-size: 25px;
-}
 .raisonchoisirtext h5{
-  /* border: 2px solid; */
   font-size: 25px;
   color: #FF9700;
   font-weight: bold;
 }
 
+.iconchoisir div i {
+  font-size: 40px;
+}
+
 
 /* La section des 3 informations  */
 .sectioninformations{
-  margin-top: 8% !important;
+  margin-top: 2% !important;
   width: 90%;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  /* gap: 7%; */
+  display: flex;
+  grid-template-columns: auto auto ;
+  gap: 7%;
   justify-content: center;
   border: 0.5px solid #FF9700;
   box-shadow:9px 9px #19375C;
@@ -891,35 +754,56 @@
   font-weight: bold;
 }
 .sectioninformations p{
-  font-size: 18px;
+  font-size: 20px;
   color:black;
   text-align: justify;
   margin-top: 3%;
 }
 .sectioninformations i{
   color: #FF9700;
-  font-size: 30px;
+  font-size: 38px;
+}
+.blocfichier{
+  margin-top: 4%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
 }
 .fichier{
   background-color: #19375C;
-  width: 80px;
+  width: 100px;
   border-radius: 30px 30px 30px 0;
+}
+.fichier i{
+  margin: 20%;
+}
+.blocgens{
+  margin-top: 4%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
 }
 .gens{
   background-color: #19375C;
-  width: 80px;
+  width: 100px;
   border-radius: 30px 30px 30px 0;
+}
+.gens i{
+  margin: 20%;
+}
+.blocpartage{
+  margin-top: 4%;
+  display: flex;
+  gap: 5%;
+  align-items: center;
 }
 .partage{
   background-color: #19375C;
-  width: 65px;
+  width: 80px;
   border-radius: 30px 30px 30px 0;
 }
 .partage i{
   margin: 20%;
-}
-.tabblocpartage{
-  width: 40%;
 }
 
 

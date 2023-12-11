@@ -21,17 +21,25 @@ export class RessourcesComponent implements OnInit {
   consigne: string = '';
   etat: boolean = false ;
 
+  allRessource = true;
+  allRessourceInformatique = false;
+  allRessourceEntrepreneriat = false;
+
+  tabAllCategoriesInformatiques : any = [];
+  tabAllCategoriesEntrepreneriat : any = [];
+
 
   constructor ( private ressources : RessourcesService, private router : Router){}
 
 
   ngOnInit(): void {
     this.afficher();
+    this.addNewRessources();
     console.log(this.afficherRssources);
   }
 
 
-
+//Methode pour ajouter une catégorie
   addNewRessources() {
     const newRessources = {
       titre: this.titre,
@@ -42,33 +50,56 @@ export class RessourcesComponent implements OnInit {
     this.ressources.addRessources(newRessources).subscribe(
       (response) => {
         console.log('Ressources ajouté avec succès :', response);
-        // Réinitialiser les données pour ajouter un nouvel Ressources
-        // newRessources = response;
-        // newRessources.push(newRessources);
-        this.affichermessage('success','Ressources Ajouté','')
+        this.affichermessage('success','Ressource Ajoutée','')
       },
       (error) => {
-        console.error('Erreur lors de l\'ajout de l\'Ressources :', error);
+        console.error('Erreur lors de l\'ajout de l\'Ressource :', error);
       }
     );
     console.log(newRessources);
   }
 
+  // exemple
+  options = ['Option 1', 'Option 2', 'Option 3'];
+  optionSelectionnee: string = '';
 
+  submit() {
+    console.log('Option sélectionnée :', this.optionSelectionnee);
+    // Ajoutez ici le traitement de l'option sélectionnée
+  }
+
+  // Methode pour modifier un id spécifique
+  // variables
+  modificationRessource:any ={
+    titre: this.titre,
+    objectif: this.objectif,
+    consigne: this.consigne,
+    etat: this.etat,
+  }
+
+  modifResource(id:number){
+    this.ressources.modifierRessources(id, this.modificationRessource).subscribe(
+      (response) => {
+        console.log('Mise à jour réussie :', response);
+        this.affichermessage('success','Ressource Modifiée','')
+      },
+      (error) => {
+        console.error('Erreur lors de la mise à jour :', error);
+      }
+    );
+  } 
+
+// Methode pour afficher les afficher
   afficher() {
     this.ressources.ressourcesData().subscribe((data) => {
       this.myData = data;
       this.afficherRssources = this.myData
       console.log(this.afficherRssources);
+
+      
       
     });
   }
-  // afficher() {
-  //   this.userService.userData().subscribe((data) => {
-  //     this.myData = data;
-  //     this.filteredUser = this.myData
-  //   });
-  // }
 
 
   affichermessage(icone: any, message: string,user:string) {
@@ -80,5 +111,22 @@ export class RessourcesComponent implements OnInit {
     })
   }
 
+
+  getAllCategoriesInformatique()
+  {
+    
+    this.allRessource = false;
+    this.allRessourceInformatique =true;
+    this.allRessourceEntrepreneriat = false;
+
+
+  }
+
+  getAllCategoriesEntrepreneria()
+  {
+    this.allRessource = false;
+    this.allRessourceInformatique =false;
+    this.allRessourceEntrepreneriat = true;
+  }
 
 }
