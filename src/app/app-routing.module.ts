@@ -14,6 +14,10 @@ import { SettingProfilComponent } from './composants/setting-profil/setting-prof
 import { ProfilComponent } from './composants/profil/profil.component';
 import { PageaccueilComponent } from './composants/pageaccueil/pageaccueil.component';
 import { AproposComponent } from './composants/apropos/apropos.component';
+
+import { ProjetsComponent } from './composants/projets/projets.component';
+import { RessourcesComponent } from './composants/ressources/ressources.component';
+
 import { ProjetsComponent } from './composants/projets/projets.component'
 import { LoginComponent } from './composants/auth/login/login.component';
 import { SignupComponent } from './composants/auth/signup/signup.component';
@@ -26,6 +30,7 @@ import { ProjectsComponent } from './composants/projects/projects.component';
 
 
 
+
 const routes: Routes = [
    {path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'login', component: AuthComponent },
@@ -35,9 +40,14 @@ const routes: Routes = [
   { path: 'conditionUtilisation', component: ConditionsGeneralesComponent },
   { path: 'pageacceuil', component: PageaccueilComponent },
   { path: 'apropos', component: AproposComponent },
+
+  { path:'projets', component: ProjetsComponent },
+  {path: 'ressources', component: RessourcesComponent },
+
   { path: 'projets', component: ProjetsComponent },
   { path: 'loginE', component: LoginComponent },
    { path: 'signup', component: SignupComponent },
+
 
   { path: 'forum', component: ForumComponent },
   { path: 'listForum', component:ListForumComponent },
