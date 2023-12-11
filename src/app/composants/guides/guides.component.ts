@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import * as ClipboardJS from 'clipboard';
-
 @Component({
   selector: 'app-guides',
   templateUrl: './guides.component.html',
