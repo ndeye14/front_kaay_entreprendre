@@ -1,83 +1,110 @@
 <!-- <mat-spinner *ngIf="loading"></mat-spinner> -->
+<div class="container">
+  <div class="row justify-content-center ">
+    <div class="col-md-8">
+      <div class="card-group mb-0 border">
+        <div class="card p-4">
+          <div class="card-body">
+            <img src="assets/logo.png" alt="" style="width: 80%;">
+            <p class="text-muted  ">Inscrivez-vous a la plateforme kaay Entreprendre </p>
+            <div class="entete">
+              <h4 class="text-center ">Inscrivez-vous</h4>
 
-<form [formGroup]="signupForm" *ngIf="!loading">
-  <!-- Email -->
-  <div class="form-group">
-    <label for="email">Email</label>
-    <input type="email" class="form-control" id="email" formControlName="email">
-  </div>
+              <p class="text-center icon"><i class="fa-brands fa-facebook" style="color: #fff;"></i>
+                <i class="fa-brands fa-square-twitter" style="color: #fff;"></i>
+                <i class="fa-brands fa-google-plus" style="color: #fff;"></i>
+              </p>
+            </div>
+              <form [formGroup]="signupForm" *ngIf="!loading">
+                <!-- Role -->
+                <div class="form-group">
+                    <label for="nameInput" class="form-label">Choisir role: </label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected></option>
+                      <option value="1">Experimente</option>
+                      <option value="2">Novice</option>
+                    </select>
+                    <!-- <input type="text" name="name" class="form-control" id="nameInput"> -->
 
-  <!-- Password -->
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" id="password" formControlName="password">
-  </div>
+                  </div>
+                <!-- Email -->
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email" formControlName="email">
+                </div>
 
-  <!-- Nom -->
-  <div class="form-group">
-    <label for="nom">Nom</label>
-    <input type="text" class="form-control" id="nom" formControlName="nom">
-  </div>
+                <!-- Password -->
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" formControlName="password">
+                </div>
 
-  <!-- Prénom -->
-  <div class="form-group">
-    <label for="prenom">Prénom</label>
-    <input type="text" class="form-control" id="prenom" formControlName="prenom">
-  </div>
+                <!-- Nom -->
+                <div class="form-group">
+                  <label for="nom">Nom</label>
+                  <input type="text" class="form-control" id="nom" formControlName="nom">
+                </div>
 
-  <!-- image -->
-  <div class="form-group">
-    <label for="image">image</label>
-    <input type="text" class="form-control" id="image" formControlName="image">
-  </div>
+                <!-- Prénom -->
+                <div class="form-group">
+                  <label for="prenom">Prénom</label>
+                  <input type="text" class="form-control" id="prenom" formControlName="prenom">
+                </div>
 
- <!-- statut -->
-  <div class="form-group">
-    <label for="statut">statut</label>
-    <input type="text" class="form-control" id="statut" formControlName="statut">
-  </div>
+                <!-- image -->
+                <div class="form-group">
+                  <label for="image">image</label>
+                  <input type="text" class="form-control" id="image" formControlName="image">
+                </div>
 
-  <!-- status juridique -->
-  <div class="form-group">
-    <label for="statuJuridique">Statut Juridique</label>
-    <input type="text" class="form-control" id="statuJuridique" formControlName="statuJuridique">
-  </div>
-  <!-- nomentreprise -->
-  <div class="form-group">
-    <label for="nomEntreprise">Nom Entreprise </label>
-    <input type="text" class="form-control" id="nomEntreprise" formControlName="nomEntreprise">
-  </div>
-  <!-- ninea-->
-  <div class="form-group">
-    <label for="nineaOuRegistreCommerce">Registre Commerce</label>
-    <input type="text" class="form-control" id="nineaOuRegistreCommerce" formControlName="nineaOuRegistreCommerce">
-  </div>
-  <!-- annee experience -->
-  <div class="form-group">
-    <label for="anneeExperience">Annee experience</label>
-    <input type="text" class="form-control" id="anneeExperience" formControlName="anneeExperience">
-  </div>
-  <!-- secteur activite -->
-  <div class="form-group">
-    <label for="secteurActivite">Secteur Activite</label>
-    <input type="text" class="form-control" id="secteurActivite" formControlName="secteurActivite">
-  </div>
-  <!-- site web -->
-  <div class="form-group">
-    <label for="siteWeb">site web</label>
-    <input type="text" class="form-control" id="siteWeb" formControlName="siteWeb">
-  </div>
+                <!-- status juridique -->
+                <div class="form-group">
+                  <label for="statuJuridique">Statut Juridique</label>
+                  <input type="text" class="form-control" id="statuJuridique" formControlName="statuJuridique">
+                </div>
+                <!-- nomentreprise -->
+                <div class="form-group">
+                  <label for="nomEntreprise">Nom Entreprise </label>
+                  <input type="text" class="form-control" id="nomEntreprise" formControlName="nomEntreprise">
+                </div>
+                <!-- ninea-->
+                <div class="form-group">
+                  <label for="nineaOuRegistreCommerce">Registre Commerce</label>
+                  <input type="text" class="form-control" id="nineaOuRegistreCommerce" formControlName="nineaOuRegistreCommerce">
+                </div>
+                <!-- annee experience -->
+                <div class="form-group">
+                  <label for="anneeExperience">Annee experience</label>
+                  <input type="text" class="form-control" id="anneeExperience" formControlName="anneeExperience">
+                </div>
+                <!-- secteur activite -->
+                <div class="form-group">
+                  <label for="secteurActivite">Secteur Activite</label>
+                  <input type="text" class="form-control" id="secteurActivite" formControlName="secteurActivite">
+                </div>
+                <!-- site web -->
+                <div class="form-group">
+                  <label for="siteWeb">site web</label>
+                  <input type="text" class="form-control" id="siteWeb" formControlName="siteWeb">
+                </div>
 
 
-  <!-- Image -->
-  <!-- <div class="form-group">
-    <input type="file" accept="image/*" #imageInput (change)="onFileAdded($event)">
-    <button mat-raised-button color="primary" (click)="imageInput.click()">ADD IMAGE</button>
-    <img [src]="imagePreview" *ngIf="imagePreview" style="max-height: 100px;display:block;margin-top:10px">
-  </div> <br> -->
+                <!-- Image -->
+                <!-- <div class="form-group">
+                  <input type="file" accept="image/*" #imageInput (change)="onFileAdded($event)">
+                  <button mat-raised-button color="primary" (click)="imageInput.click()">ADD IMAGE</button>
+                  <img [src]="imagePreview" *ngIf="imagePreview" style="max-height: 100px;display:block;margin-top:10px">
+                </div> <br> -->
 
-  <!-- Soumission [disabled]="signupForm.invalid"-->
-  <button class="btn btn-outline-primary" color="primary" (click)="onSignup()">SIGN UP</button>
-  <p class="text-danger" *ngIf="errorMsg">{{ errorMsg }}</p>
-</form>
+                <!-- Soumission [disabled]="signupForm.invalid"-->
+                <button class="btn btn-outline-primary" color="primary" (click)="onSignup()">SIGN UP</button>
+                <p class="text-danger" *ngIf="errorMsg">{{ errorMsg }}</p>
+              </form>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 

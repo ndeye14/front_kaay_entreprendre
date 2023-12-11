@@ -1,4 +1,25 @@
 <!-- <mat-spinner *ngIf="loading"></mat-spinner> -->
+<app-header></app-header>
+<br>
+<br><br>
+<br>
+
+
+<div class="container shadow py-3 mt-5">
+  <div class="row justify-content-center ">
+    <div class="col-md-8">
+      <div class="card-group mb-0 border">
+        <div class="card p-4">
+          <div class="card-body">
+            <img src="assets/logo.png" alt="" style="width: 80%;">
+            <p class="text-muted  ">Connexion a la plateforme kaay Entreprendre </p>
+            <div class="entete">
+              <h4 class="text-center">Connexion</h4>
+              <p class="text-center icon"><i class="fa-brands fa-facebook" style="color: #fff;"></i>
+                <i class="fa-brands fa-square-twitter" style="color: #fff;"></i>
+                <i class="fa-brands fa-google-plus" style="color: #fff;"></i>
+              </p>
+            </div>
 
 <form [formGroup]="loginForm" *ngIf="!loading">
 
@@ -18,3 +39,14 @@
   <button class="btn btn-outline-primary"  [disabled]="loginForm.invalid" (click)="onLogin()">LOGIN</button>
   <p class="text-danger" *ngIf="errorMsg">{{ errorMsg }}</p>
 </form>
+
+          </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+<app-footer></app-footer>

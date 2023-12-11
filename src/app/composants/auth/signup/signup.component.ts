@@ -1,4 +1,3 @@
-import { AuthService } from 'src/app/services/auth/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
@@ -26,7 +25,7 @@ export class SignupComponent implements OnInit{
 
   constructor(
     private formBuilder: FormBuilder,
-    private auth: AuthService,
+    private auth: UserService,
     private router: Router,
     private route: ActivatedRoute,
     private userService: UserService,
@@ -67,7 +66,7 @@ export class SignupComponent implements OnInit{
        nom: [null, [Validators.required]],
        prenom: [null, [Validators.required]],
        image: [null,[Validators.required]],
-       statut: [null],
+       role: [null],
        statuJuridique: [null],
        nomEntreprise: [null],
        nineaOuRegistreCommerce: [null],
@@ -88,7 +87,7 @@ export class SignupComponent implements OnInit{
       prenom: [user.prenom, [Validators.required]],
       email: [user.email, [Validators.required, Validators.email]],
       password: [user.password, Validators.required],
-      statut: [null],
+      // statut: [null],
        statuJuridique: [null],
        nomEntreprise: [null],
        nineaOuRegistreCommerce: [null],
@@ -103,15 +102,13 @@ export class SignupComponent implements OnInit{
 
   onSignup() {
     this.loading = true;
-    const email = this.signupForm.get('email')!.value;
-    const password = this.signupForm.get('password')!.value;
 
     const newUser = new User();
     newUser.email = this.signupForm.get('email')!.value;
     newUser.password = this.signupForm.get('password')!.value;
     newUser.nom = this.signupForm.get('nom')!.value;
     newUser.prenom = this.signupForm.get('prenom')!.value;
-    newUser.statut = this.signupForm.get('statut')!.value;
+    // newUser.role = this.signupForm.get('statut')!.value;
     newUser.statuJuridique = this.signupForm.get('statuJuridique')!.value;
     newUser.nomEntreprise = this.signupForm.get('nomEntreprise')!.value;
     newUser.secteurActivite = this.signupForm.get('secteurActivite')!.value;
@@ -121,12 +118,7 @@ export class SignupComponent implements OnInit{
     newUser.anneeExperience = this.signupForm.get('anneeExperience')!.value;
 
 
-    if (this.mode === 'new') {
-      console.log("newUser");
-      console.log(newUser);
-      console.log(newUser.email);
-
-      this.userService.add(newUser).pipe(
+     this.userService.add(newUser).pipe(
         tap(({ message }) => {
           console.log(message);
           this.loading = false;
@@ -139,21 +131,40 @@ export class SignupComponent implements OnInit{
           return EMPTY;
         })
       ).subscribe();
-    } else if (this.mode === 'edit') {
-      this.userService.edit(this.userAModifier.id, newUser, this.signupForm.get('image')!.value).pipe(
-        tap(({ message }) => {
-          console.log(message);
-          this.loading = false;
-          this.router.navigate(['/accueil']);
-        }),
-        catchError(error => {
-          console.error(error);
-          this.loading = false;
-          this.errorMsg = error.message;
-          return EMPTY;
-        })
-      ).subscribe();
-    }
+
+    // if (this.mode === 'new') {
+    //   console.log("newUser");
+    //   console.log(newUser);
+    //   console.log(newUser.email);
+
+    //   this.userService.add(newUser).pipe(
+    //     tap(({ message }) => {
+    //       console.log(message);
+    //       this.loading = false;
+    //       this.router.navigate(['/loginE']);
+    //     }),
+    //     catchError(error => {
+    //       console.error(error);
+    //       this.loading = false;
+    //       this.errorMsg = error.message;
+    //       return EMPTY;
+    //     })
+    //   ).subscribe();
+    // } else if (this.mode === 'edit') {
+    //   this.userService.edit(this.userAModifier.id, newUser, this.signupForm.get('image')!.value).pipe(
+    //     tap(({ message }) => {
+    //       console.log(message);
+    //       this.loading = false;
+    //       this.router.navigate(['/accueil']);
+    //     }),
+    //     catchError(error => {
+    //       console.error(error);
+    //       this.loading = false;
+    //       this.errorMsg = error.message;
+    //       return EMPTY;
+    //     })
+    //   ).subscribe();
+    // }
 
   }
 

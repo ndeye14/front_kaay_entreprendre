@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { catchError, EMPTY, tap } from 'rxjs';
-import { AuthService } from 'src/app/services/auth/auth.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +17,7 @@ export class LoginComponent {
 
   constructor(
     private formBuilder: FormBuilder,
-    private auth: AuthService,
+    private auth: UserService,
     private router: Router
   ) { }
 
