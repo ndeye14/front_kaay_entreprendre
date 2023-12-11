@@ -1,6 +1,8 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +21,13 @@ import { ForumComponent } from './composants/forum/forum.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { RessourcesComponent } from './composants/ressources/ressources.component';
 import { FormsModule } from '@angular/forms';
+
+import { LoginComponent } from './composants/auth/login/login.component';
+import { SignupComponent } from './composants/auth/signup/signup.component';
+import { ListForumComponent } from './composants/list-forum/list-forum.component';
+
+import { CommonModule } from '@angular/common';
+
 
 
 @NgModule({
@@ -40,16 +49,29 @@ import { FormsModule } from '@angular/forms';
     ForumComponent,
 
     MenuComponent,
+
     RessourcesComponent
+      LoginComponent,
+      SignupComponent,
+      ListForumComponent
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+
     HttpClientModule,
 
     FormsModule
+
+
+    HttpClientModule,
+    ReactiveFormsModule,
+
+    CommonModule,
+
+
   ],
   providers: [],
   bootstrap: [AppComponent]

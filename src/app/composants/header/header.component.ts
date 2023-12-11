@@ -8,12 +8,13 @@ import { AuthComponent } from '../auth/auth.component';
 })
 export class HeaderComponent implements OnInit {
 
-   constructor() { }
+    constructor() {}
 
    user : any;
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
-  
+
+
 
 }

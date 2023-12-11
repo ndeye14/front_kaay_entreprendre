@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import Swal from 'sweetalert2';
-import { AuthService } from 'src/app/services/auth/auth.service';
 import { HeaderConnecteComponent } from '../header-connecte/header-connecte.component';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-auth',
@@ -20,7 +20,7 @@ export class AuthComponent {
 
 
   // On fait appel au constructeur
-   constructor( private route: Router) {}
+   constructor( private route: Router,private authService:UserService) {}
   ngOnInit(): void {
 
   }
@@ -60,7 +60,7 @@ export class AuthComponent {
   //     }
     //   }
 
-    this.route.navigate(['accueil']);
+    // this.route.navigate(['accueil']);
   }
   // choix formulaire
 showFrmConnexion: boolean=true;

@@ -1,0 +1,242 @@
+
+<div class="row" id="wrapper">
+  <div class="col-3" style="position: fixed; z-index:1;">
+    <div id="wrapper">
+      <!-- Sidebar -->
+      <ul
+      class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+      id="accordionSidebar"
+      style="position: fixed; z-index: 1"
+    >
+      <!-- Sidebar - Brand -->
+      <a
+        routerLinkActive="active"
+        routerLink="/dash"
+        href="/dash"
+        class="sidebar-brand d-flex align-items-center justify-content-center"
+      >
+        <img src="/assets/logo.png" alt="" style="width: 20vh" />
+      </a>
+
+      <!-- Divider -->
+      <hr
+        class="sidebar-divider my-0"
+        style="background-color: #ff9700; font-weight: bolder"
+      />
+
+      <img
+        class="img-profile rounded-circle mt-2"
+        src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW58ZW58MHx8MHx8fDA%3D"
+        style="height: 10vh; width: 10vh; margin-left: 30%"
+      />
+      <!-- Nav Item - Dashboard -->
+      <li class="nav-item active py-1">
+        <a class="nav-link" href="/dash">
+          <i class="fas fa-fw fa-tachometer-alt" style="font-size: 22px"></i>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <span style="font-size: 22px">Dashboard</span></a
+        >
+      </li>
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item py-1">
+        <a
+          class="nav-link collapsed"
+          routerLinkActive="active" href="/projects"
+          aria-expanded="true"
+          aria-controls="collapseTwo"
+        >
+          <i class="fas fa-fw fa-folder" style="font-size: 22px"></i>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <span style="font-size: 22px">Projets</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Utilities Collapse Menu -->
+      <li class="nav-item py-1">
+        <a
+          class="nav-link collapsed"
+          href="/users"
+          aria-expanded="true"
+          aria-controls="collapseUtilities"
+        >
+          <i class="fas fa-fw fa-wrench" style="font-size: 22px"></i>
+          &nbsp;&nbsp;
+          <span style="font-size: 22px">Utilisateurs</span>
+        </a>
+      </li>
+
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item py-1">
+        <a
+          class="nav-link collapsed"
+          href="/guides"
+          aria-expanded="true"
+          aria-controls="collapsePages"
+        >
+          <i class="fas fa-fw fa-cog" style="font-size: 22px"></i
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <span style="font-size: 22px">Guides</span>
+        </a>
+      </li>
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item py-1">
+        <a
+          class="nav-link collapsed"
+          href="/forum"
+          aria-expanded="true"
+          aria-controls="collapsePages"
+        >
+          <i class="fas fa-fw fa-cog" style="font-size: 22px"></i
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <span style="font-size: 22px">Forum</span>
+        </a>
+      </li>
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item py-1">
+        <a
+          class="nav-link collapsed"
+          href="/commentaires"
+          aria-expanded="true"
+          aria-controls="collapsePages"
+        >
+          <i class="fas fa-fw fa-cog" style="font-size: 22px"></i
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <span style="font-size: 22px">Comment..</span>
+        </a>
+      </li>
+      <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item py-1">
+        <a
+          class="nav-link collapsed"
+          href="/profil"
+          aria-expanded="true"
+          aria-controls="collapsePages"
+        >
+          <i class="fas fa-fw fa-cog" style="font-size: 22px"></i
+          >&nbsp;&nbsp;&nbsp;&nbsp;
+          <span style="font-size: 22px">Profil</span>
+        </a>
+      </li>
+    </ul>
+       <!-- Topbar -->
+<nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow " style="position:fixed; z-index:1;width: 85%;margin-left:15%;">
+
+  <!-- Sidebar Toggle (Topbar) -->
+  <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+      <i class="fa fa-bars"></i>
+  </button>
+
+
+
+  <!-- Topbar Navbar -->
+  <ul class="navbar-nav ml-auto" >
+
+      <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+      <li class="nav-item dropdown no-arrow d-sm-none">
+          <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-search fa-fw"></i>
+          </a>
+          <!-- Dropdown - Messages -->
+          <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+              aria-labelledby="searchDropdown">
+              <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                      <input type="text" class="form-control bg-light border-0 small"
+                          placeholder="Search for..." aria-label="Search"
+                          aria-describedby="basic-addon2">
+                      <div class="input-group-append">
+                          <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search fa-sm"></i>
+                          </button>
+                      </div>
+                  </div>
+              </form>
+          </div>
+      </li>
+
+
+
+      <!-- <div class="topbar-divider d-none d-sm-block"></div> -->
+
+      <!-- Nav Item - User Information -->
+      <li class="nav-item dropdown no-arrow" >
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="mr-2 d-none d-lg-inline text-gray-600 small">Ndeye Fatou SOW</span>
+              <img class="img-profile rounded-circle"
+                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW58ZW58MHx8MHx8fDA%3D">
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+              aria-labelledby="userDropdown">
+              <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+              </a>
+              <a class="dropdown-item" href="#">
+                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Settings
+              </a>
+              <a class="dropdown-item" href="#">
+                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Activity Log
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+              </a>
+          </div>
+      </li>
+
+  </ul>
+
+</nav>
+<!-- End of Topbar -->
+    </div>
+  </div>
+  <div class="col-9" style="margin-left: 20%; width: 150vh,">
+    <div class="card-body" style="margin-top:10%;" >
+      <h5 class="card-title text-dark fw-bold">Listes des commentaires</h5>
+      <table class="table">
+        <thead >
+          <tr>
+            <th scope="col" style="background-color: #FF9700;color: #ffffff;">Commentaires</th>
+            <td style="background-color: #FF9700;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <th scope="col" style="background-color: #FF9700;">&nbsp;</th>
+            <th scope="col" style="background-color: #FF9700;color: #ffffff"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><img class="img-profile"
+              src="https://dash-ui-admin-template.vercel.app/images/brand/dropbox-logo.svg" style="height:50px;width:50px;"></th>
+            <td >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>File Management App</td>
+            <td><img class="img-profile rounded-circle"
+              src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW58ZW58MHx8MHx8fDA%3D" style="height: 65px;width: 73px;" ></td>
+          </tr>
+          <tr>
+            <th scope="row"><img class="img-profile"
+              src="https://dash-ui-admin-template.vercel.app/images/brand/slack-logo.svg" style="height:50px;width:50px;"></th>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>Slack Team UI Design</td>
+            <td><img class="img-profile rounded-circle"
+              src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW58ZW58MHx8MHx8fDA%3D" style="height: 65px;width: 73px;" ></td>
+          </tr>
+          <tr>
+            <th scope="row"><img class="img-profile"
+              src="https://dash-ui-admin-template.vercel.app/images/brand/github-logo.svg" style="height:50px;width:50px;"></th>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td>GitHub Satellite</td>
+            <td><img class="img-profile rounded-circle"
+              src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29tYW58ZW58MHx8MHx8fDA%3D" style="height: 65px;width: 73px;" ></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+</div>
