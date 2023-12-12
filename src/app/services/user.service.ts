@@ -84,7 +84,6 @@ export class UserService {
   }
 
 
-
   // *************** GESTION USER ****************
 
   // Authentifie user. { userId: string, token: string } pr dire on attend en reponse ceci
@@ -105,14 +104,27 @@ export class UserService {
       })
     );
   }
+  logOut() {
+    return this.http.get<any>('http://127.0.0.1:8000/api/logout').pipe(
+      tap(({ userId, token }) => {
+        this.userId = userId;
+        // on met à je la val de isAuth$
+      })
+    );
+  }
+
 
 
   logout() {
-    // On vide les infos du token et on met à je la val de isAuth$
-    this.authToken = '';
-    this.userId = '';
-    this.isAuth$.next(false);
-    this.isAdmin$.next(false);
-    this.router.navigate(['login']);
+    return this.http.get<any>('http://127.0.0.1:8000/api/logout').pipe(
+      tap(() => {
+        this.authToken = '';
+        this.userId = '';
+        this.isAuth$.next(false);
+        this.isAdmin$.next(false);
+        this.router.navigate(['login']);
+      })
+    );
+    // On vide les infos du token et on met à je la val de isAuth$ 
   }
 }
