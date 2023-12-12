@@ -108,7 +108,7 @@ export class SignupComponent implements OnInit{
     newUser.password = this.signupForm.get('password')!.value;
     newUser.nom = this.signupForm.get('nom')!.value;
     newUser.prenom = this.signupForm.get('prenom')!.value;
-    // newUser.role = this.signupForm.get('statut')!.value;
+    newUser.role = this.signupForm.get('role')!.value;
     newUser.statuJuridique = this.signupForm.get('statuJuridique')!.value;
     newUser.nomEntreprise = this.signupForm.get('nomEntreprise')!.value;
     newUser.secteurActivite = this.signupForm.get('secteurActivite')!.value;
