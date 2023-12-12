@@ -34,6 +34,21 @@ export class SignupComponent implements OnInit{
 
   ngOnInit() {
 
+    this.signupForm = this.formBuilder.group({
+      role: ['novice', Validators.required], // Par défaut, le rôle est novice
+      email: ['', Validators.required],
+      password: ['', Validators.required],
+      nom: [''],
+      prenom: [''],
+      image: [''],
+      statuJuridique: [''],
+      nomEntreprise: [''],
+      nineaOuRegistreCommerce: [''],
+      anneeExperience: [''],
+      secteurActivite: [''],
+      siteWeb: ['']
+    });
+
     this.loading = true;
     this.route.params.pipe(
       switchMap(params => {
@@ -108,7 +123,7 @@ export class SignupComponent implements OnInit{
     newUser.password = this.signupForm.get('password')!.value;
     newUser.nom = this.signupForm.get('nom')!.value;
     newUser.prenom = this.signupForm.get('prenom')!.value;
-    // newUser.role = this.signupForm.get('statut')!.value;
+    newUser.role = this.signupForm.get('role')!.value;
     newUser.statuJuridique = this.signupForm.get('statuJuridique')!.value;
     newUser.nomEntreprise = this.signupForm.get('nomEntreprise')!.value;
     newUser.secteurActivite = this.signupForm.get('secteurActivite')!.value;

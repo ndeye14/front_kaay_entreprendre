@@ -56,11 +56,11 @@ export class AuthComponent {
   //       console.log(autth);
 
   //     } else {
-  //       console.log(('pas bon ca'));
+  //       console.log(('pas bon ca'));%
   //     }
     //   }
 
-    // this.route.navigate(['accueil']);
+    this.route.navigate(['accueil']);
   }
   // choix formulaire
 showFrmConnexion: boolean=true;

@@ -1,4 +1,3 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -50,7 +49,7 @@ import { CommonModule } from '@angular/common';
 
     MenuComponent,
 
-    RessourcesComponent
+    RessourcesComponent,
       LoginComponent,
       SignupComponent,
       ListForumComponent
@@ -61,9 +60,9 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
 
-    HttpClientModule,
+    // HttpClientModule,
 
-    FormsModule
+    FormsModule,
 
 
     HttpClientModule,
