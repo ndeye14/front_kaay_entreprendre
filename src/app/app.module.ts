@@ -61,7 +61,6 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
 
-    HttpClientModule,
 
     FormsModule
 
