@@ -1,4 +1,3 @@
-import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 // import { HttpClientModule } from '@angular/common/http';
@@ -61,6 +60,10 @@ import { CommonModule } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
 
+<<<<<<< HEAD
+    // HttpClientModule,
+=======
+>>>>>>> 2c46919d067d57c348a84cca31c18cbe793f3bfe
 
     FormsModule,
 

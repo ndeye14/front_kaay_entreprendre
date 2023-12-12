@@ -15,47 +15,50 @@
                 <i class="fa-brands fa-google-plus" style="color: #fff;"></i>
               </p>
             </div>
-              <form [formGroup]="signupForm" *ngIf="!loading">
-                <!-- Role -->
-                <div class="form-group">
-                    <label for="nameInput" class="form-label">Choisir role: </label>
-                    <select class="form-select" aria-label="Default select example" formControlName="role">
-                      <option value="experimente">Experimente</option>
-                      <option value="novice">Novice</option>
-                    </select>
 
-                  </div>
-                <!-- Email -->
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" class="form-control" id="email" formControlName="email">
-                </div>
 
-                <!-- Password -->
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password" formControlName="password">
-                </div>
+            <form [formGroup]="signupForm" *ngIf="!loading">
+              <!-- Role -->
+              <div class="form-group">
+                <label for="nameInput" class="form-label">Choisir role: </label>
+                <select class="form-select" aria-label="Default select example" formControlName="role">
+                  <option value="novice">Novice</option>
+                  <option value="experimente">Experimente</option>
+                </select>
+              </div>
+            
+              <!-- Champs communs à tous les rôles -->
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" formControlName="email">
+              </div>
+            
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" formControlName="password">
+              </div>
+            
+              <!-- Champs spécifiques au rôle novice -->
+              <div *ngIf="signupForm.get('role')?.value === 'novice'">
 
-                <!-- Nom -->
                 <div class="form-group">
                   <label for="nom">Nom</label>
                   <input type="text" class="form-control" id="nom" formControlName="nom">
                 </div>
-
-                <!-- Prénom -->
+            
                 <div class="form-group">
                   <label for="prenom">Prénom</label>
                   <input type="text" class="form-control" id="prenom" formControlName="prenom">
                 </div>
+              </div>
 
                 <!-- image -->
                 <div class="form-group">
                   <label for="image">image</label>
                   <input type="text" class="form-control" id="image" formControlName="image">
                 </div>
-
-                <!-- status juridique -->
+                <div *ngIf="signupForm.get('role')?.value === 'experimente'">
+                  <!-- status juridique -->
                 <div class="form-group">
                   <label for="statuJuridique">Statut Juridique</label>
                   <input type="text" class="form-control" id="statuJuridique" formControlName="statuJuridique">
@@ -85,7 +88,7 @@
                   <label for="siteWeb">site web</label>
                   <input type="text" class="form-control" id="siteWeb" formControlName="siteWeb">
                 </div>
-
+                </div>
 
                 <!-- Image -->
                 <!-- <div class="form-group">
@@ -95,7 +98,7 @@
                 </div> <br> -->
 
                 <!-- Soumission [disabled]="signupForm.invalid"-->
-                <button class="btn btn-outline-primary" color="primary" (click)="onSignup()">SIGN UP</button>
+                <button class="btn btn-outline-primary" color="primary">SIGN UP</button>
                 <p class="text-danger" *ngIf="errorMsg">{{ errorMsg }}</p>
               </form>
 
