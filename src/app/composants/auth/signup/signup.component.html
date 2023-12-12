@@ -15,6 +15,8 @@
                 <i class="fa-brands fa-google-plus" style="color: #fff;"></i>
               </p>
             </div>
+
+
             <form [formGroup]="signupForm" *ngIf="!loading">
               <!-- Role -->
               <div class="form-group">
@@ -38,6 +40,7 @@
             
               <!-- Champs spécifiques au rôle novice -->
               <div *ngIf="signupForm.get('role')?.value === 'novice'">
+
                 <div class="form-group">
                   <label for="nom">Nom</label>
                   <input type="text" class="form-control" id="nom" formControlName="nom">
