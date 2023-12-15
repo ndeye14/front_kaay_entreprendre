@@ -1,0 +1,131 @@
+<!-- <app-header></app-header> -->
+<app-header-connecte></app-header-connecte>
+
+<!-- <button (click)="submit()">Soumettre</button> -->
+<div class="blocgeneral">
+
+  <div class="bloccategorie">
+
+    <div class="informatique" (click)="getAllCategoriesInformatique()">
+      <img src="https://img.freepik.com/free-photo/black-businessman-using-computer-laptop_53876-14803.jpg?w=740&t=st=1702137352~exp=1702137952~hmac=296f1ed6113e383e6286572022be6132a928e26510278e95dce49c0b594bedae" alt="">
+      <h5>Informatique</h5>
+    </div>
+
+    <div class="" (click)="getAllCategoriesEntrepreneria()">
+      <img src="https://img.freepik.com/free-photo/portrait-attractive-cuban-woman-presenting-statistical-information-her-unrecognizable-boss_1098-20618.jpg?w=740&t=st=1702137423~exp=1702138023~hmac=4fc9d885731e6183e09213931c0718b2553c9c415234341ec2a44668ab49f40a" alt="">
+      <h5>Entreprenariat</h5>
+    </div>
+
+    <div class="agriculture">
+      <img src="https://img.freepik.com/free-photo/woman-holding-basket-full-different-vegetables_23-2148580022.jpg?w=740&t=st=1702137484~exp=1702138084~hmac=fa252e855b566b5a8118b8e789d8c7a99967d09cec5ba3e22dca6840c2252805" alt="">
+      <h5>Agriculture</h5>
+    </div>
+
+    <div class="aquaculture">
+      <img src="https://genv.org/wp-content/uploads/2019/02/Aquaculture-scaled.jpg" alt="">
+      <h5>Aquaculture</h5>
+    </div>
+
+    <div class="">
+      <img src="https://img.freepik.com/free-photo/hens-factory-chicken-cages_335224-1406.jpg?w=740&t=st=1702137823~exp=1702138423~hmac=cb4a6c70155b265c36047f7d3af01c29e94761234678c9b96ff6b220246eeeba" alt="">
+      <h5>Elevage</h5>
+    </div>
+
+  </div>
+
+  <h1 class="text-center">Catégorie 1</h1>
+
+<div class="container">
+  <!-- Toutes les reoouserce -->
+  <div class="bloccarte">
+    <div class="carte mt-5" *ngFor ="let ressource of afficherRssources" >
+      <div class="card-body" >
+        <div class="carteh1">
+          <h5 class="card-title text-center">Etape {{ressource.id}} {{ressource.titre}} </h5>
+        </div>
+        <h4 class="text-center">Introduction {{ressource.objectif}}</h4>
+        <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.... {{ressource.consigne}}</p>
+        <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
+        <button class="mt-3">Voir plus</button>
+      </div>
+    </div>
+  </div>
+
+    <!-- Ressources informatique -->
+    <div class="bloccarte">
+      <div class="carte mt-5" *ngFor="let ressource of tabAllCategoriesInformatiques" ngIf="allRessourceInformatique">
+        <div class="card-body" >
+          <div class="carteh1">
+            <h5 class="card-title text-center">Etape {{ressource.id}} {{ressource.titre}} </h5>
+          </div>
+          <h4 class="text-center">Introduction {{ressource.objectif}}</h4>
+          <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.... {{ressource.consigne}}</p>
+          <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
+          <button class="mt-3">Voir plus</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ressources entrepreneriat -->
+    <div class="bloccarte">
+      <div class="carte mt-5" *ngFor="let ressource of tabAllCategoriesEntrepreneriat" ngIf="allRessourceEntrepreneriat">
+        <div class="card-body" >
+          <div class="carteh1">
+            <h5 class="card-title text-center">Etape {{ressource.id}} {{ressource.titre}} </h5>
+          </div>
+          <h4 class="text-center">Introduction {{ressource.objectif}}</h4>
+          <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.... {{ressource.consigne}}</p>
+          <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
+          <button class="mt-3">Voir plus</button>
+        </div>
+      </div>
+    </div>
+    
+
+  </div>
+
+</div>
+
+<!-- ajouter une catégorie -->
+<form (ngSubmit)="addNewRessources()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Titre </label>
+    <input type="text" class="form-control" [(ngModel)]="titre" name="titre" required >
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Objectif</label>
+    <input type="text" class="form-control" [(ngModel)]="objectif" name="objectif" required  >
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Consigne</label>
+    <input type="text" class="form-control" [(ngModel)]="consigne" name="consigne" required  >
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">etat</label>
+    <input type="text" class="form-control" [(ngModel)]="etat" name="etat" required  >
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+<!-- modifier une catégorie -->
+<!-- <form (ngSubmit) ="modifResource" >
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Titre </label>
+    <input type="text" class="form-control" [(ngModel)]="modificationRessource.titre" name="titre" required value="{{titre}}" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Objectif</label>
+    <input type="text" class="form-control" [(ngModel)]="modificationRessource.objectif" name="objectif" required value="{{objectif}}" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Consigne</label>
+    <input type="text" class="form-control" [(ngModel)]="modificationRessource.consigne" name="consigne" required value="{{consigne}}" >
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">etat</label>
+    <input type="text" class="form-control" [(ngModel)]="modificationRessource.etat" name="etat" required value="{{etat}}" >
+  </div>
+  <button type="button" class="btn btn-primary">Submit</button>
+</form> -->
+<app-footer></app-footer>

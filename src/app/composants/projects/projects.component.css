@@ -1,6 +1,8 @@
 /* baniere */
 
 /* banieretexte */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 .container{
   margin-top: 8% !important;
 }

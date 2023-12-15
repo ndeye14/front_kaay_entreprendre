@@ -8,7 +8,7 @@
     </svg>
   </label>
   <ul class="links">
-    <li><a href="#">Accueil</a></li>
+    <li><a href="/pageaccueil">Accueil</a></li>
     <li><a routerLink="/projets">Projets</a></li>
     <li><a routerLink="/forum" class="active">Forum</a></li>
     <li><a routerLink="/apropos">A propos</a></li>
@@ -28,11 +28,12 @@
 </button> -->
 
 <!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 <div class="modal fade" id="projetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sousmission projet</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Soumission projet</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -41,8 +42,9 @@
           <input type="text" name="titre" class="form-control" id="titreInput">
         </div>
         <div class="form-floating mb-3">
-          <label for="floatingInput">Description</label>
-          <input type="text" class="form-control" id="floatingInput" placeholder="description">
+          <textarea name="" id="" cols="50" rows="7" placeholder="description"></textarea>
+          <!-- <label for="floatingInput">Description</label> -->
+          <!-- <input type="text" class="form-control" id="floatingInput" > -->
         </div>
 
         <div class="mb-3">
@@ -52,8 +54,8 @@
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        <button type="button" class="btn btn-primary" routerLink="/ressources">Soumettre</button>
       </div>
     </div>
   </div>

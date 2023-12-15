@@ -14,6 +14,9 @@ import { SettingProfilComponent } from './composants/setting-profil/setting-prof
 import { ProfilComponent } from './composants/profil/profil.component';
 import { PageaccueilComponent } from './composants/pageaccueil/pageaccueil.component';
 import { AproposComponent } from './composants/apropos/apropos.component';
+
+import { RessourcesComponent } from './composants/ressources/ressources.component';
+
 import { ProjetsComponent } from './composants/projets/projets.component'
 import { LoginComponent } from './composants/auth/login/login.component';
 import { SignupComponent } from './composants/auth/signup/signup.component';
@@ -23,6 +26,11 @@ import { ModificationComponent } from './composants/modification/modification.co
 import { UtilisateursComponent } from './composants/utilisateurs/utilisateurs.component';
 import { GestionsCommentairesComponent } from './composants/gestions-commentaires/gestions-commentaires.component';
 import { ProjectsComponent } from './composants/projects/projects.component';
+import { ContactAddComponent } from './contact-add/contact-add.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactUpdateComponent } from './contact-update/contact-update.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactTrashComponent } from './contact-trash/contact-trash.component';
 
 
 
@@ -35,9 +43,13 @@ const routes: Routes = [
   { path: 'conditionUtilisation', component: ConditionsGeneralesComponent },
   { path: 'pageacceuil', component: PageaccueilComponent },
   { path: 'apropos', component: AproposComponent },
-  { path: 'projets', component: ProjetsComponent },
+
+  { path:'projets', component: ProjetsComponent },
+  {path: 'ressources', component: RessourcesComponent },
+
   { path: 'loginE', component: LoginComponent },
    { path: 'signup', component: SignupComponent },
+
 
   { path: 'forum', component: ForumComponent },
   { path: 'listForum', component:ListForumComponent },
@@ -54,9 +66,12 @@ const routes: Routes = [
   {path:'projects',component:ProjectsComponent },
   {path:'users',component:UtilisateursComponent},
   {path:'commentaires',component:GestionsCommentairesComponent },
-  {path:'informations',component:ModificationComponent}
-
-
+  {path:'informations',component:ModificationComponent},
+  { path: 'contact-add', component: ContactAddComponent },
+{path:'details',component:ContactDetailComponent},
+{path:'modif',component:ContactUpdateComponent},
+{path:'list',component:ContactListComponent},
+{path:'corbeille',component:ContactTrashComponent}
 
 ];
 

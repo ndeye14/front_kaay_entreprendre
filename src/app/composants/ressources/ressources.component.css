@@ -1,0 +1,179 @@
+.bloccategorie{
+  display: flex;
+  grid-template-columns: auto auto auto auto auto;
+  border: 1px solid #FF9700;
+  box-shadow: 10px 10px #FF9700;
+  border-radius: 80px;
+  width: 80%;
+  /* align-items: center; */
+  margin: 9%;
+  justify-content: space-evenly;
+}
+.bloccategorie img{
+  height: 90px;
+  justify-content: center;
+}
+.bloccategorie div{
+  /* background-color: #FF9700; */
+  margin-top:4% ;
+  height: 170px;
+  width: 15%;
+}
+.bloccategorie h5{
+  margin-top: 2%;
+  font-size: 23px;
+  font-weight: bold;
+}
+.informatique{
+  border-right:4px solid #FF9700;
+  height: 100px !important;
+}
+.aquaculture{
+  border-right:4px solid #FF9700;
+  height: 100px !important;
+}
+.agriculture{
+  background-color: #19375C;
+  height: 150px !important;
+  padding-left: 2%;
+  padding-top: 2%;
+  border-radius: 30%;
+  color: #FF9700;
+}
+.bloccarte{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* justify-content: space-evenly; */
+}
+.carte{
+  height: 350px;
+  width: 20rem;
+  border: 3px solid #19375C;
+  box-shadow: 9px 9px  #19375C;
+  border-radius: 65px 0 65px 0;
+}
+.carteh1{
+  background-color: #FF9700;
+  border-radius: 65px 0 0 0;
+  height: 60px;
+}
+.carteh1 h5{
+  font-weight: bold;
+  color: #19375C;
+  font-size: 30px;
+}
+.carte h4{
+  font-size: 25px;
+  padding-top: 5%;
+}
+.carte p{
+  font-size: 20px;
+  width: 90%;
+  text-align: justify;
+  margin:0 auto;
+}
+.carte button{
+  border: none;
+  background-color: #FF9700;
+  border-radius: 20px 0 20px 0;
+  padding: 5px 17px;
+  box-shadow:3px  3px  #19375C;
+  color: white;
+  font-weight: bold;
+  margin-left: 32%;
+}
+
+
+ /* tel */
+ @media screen and (max-width: 575px) {
+  .blocgeneral{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .bloccategorie{
+    margin-top: 30% !important;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 4%;
+    border: 1px solid #FF9700;
+    box-shadow: 7px 7px #FF9700;
+    border-radius: 80px;
+    width: 80%;
+    /* align-items: center; */
+    margin: 9%;
+    justify-content: space-evenly;
+  }
+  .bloccategorie img{
+    height: 90px;
+    justify-content: center;
+  }
+  .bloccategorie div{
+    /* background-color: #FF9700; */
+    margin-top:4% ;
+    height: 170px;
+    width: 15%;
+  }
+  .bloccategorie h5{
+    margin-top: 2%;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .informatique{
+    border-right:none;
+  }
+  .aquaculture{
+    border-right:none;
+  }
+  .agriculture{
+    background-color: #19375C;
+    height: 150px !important;
+    padding-left: 2%;
+    padding-top: 0% !important;
+    border-radius: 30%;
+    color: #FF9700;
+    width: 40% !important;
+  }
+  .bloccarte{
+    display: grid;
+    grid-template-columns: auto ;
+    justify-content: space-evenly;
+  }
+  .carte{
+    height: 350px;
+    width: 80%;
+    border: 3px solid #19375C;
+    box-shadow: 9px 9px  #19375C;
+    border-radius: 65px 0 65px 0;
+  }
+  .carteh1{
+    background-color: #FF9700;
+    border-radius: 65px 0 0 0;
+    height: 60px;
+  }
+  .carteh1 h5{
+    font-weight: bold;
+    color: #19375C;
+    font-size: 30px;
+  }
+  .carte h4{
+    font-size: 25px;
+    padding-top: 5%;
+  }
+  .carte p{
+    font-size: 20px;
+    width: 90%;
+    text-align: justify;
+    margin:0 auto;
+  }
+  .carte button{
+    border: none;
+    background-color: #FF9700;
+    border-radius: 20px 0 20px 0;
+    padding: 5px 17px;
+    box-shadow:3px  3px  #19375C;
+    color: white;
+    font-weight: bold;
+    margin-left: 32%;
+  }
+
+ }

@@ -1,9 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule, ReactiveFormsModule} from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,14 +17,21 @@ import { ProjetsComponent } from './composants/projets/projets.component';
 import { ForumComponent } from './composants/forum/forum.component';
 
 import { MenuComponent } from './composants/menu/menu.component';
+import { RessourcesComponent } from './composants/ressources/ressources.component';
+import { FormsModule } from '@angular/forms';
 
-import { LoginComponent } from './composants/auth/login/login.component';
 import { SignupComponent } from './composants/auth/signup/signup.component';
 import { ListForumComponent } from './composants/list-forum/list-forum.component';
 
 import { CommonModule } from '@angular/common';
-import { ProjectsModule } from './projects/projects.module';
-
+import { LoginComponent } from './composants/auth/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProjectModule } from './project/project.module';
+import { ContactAddComponent } from './contact-add/contact-add.component';
+import { ContactListComponent } from './contact-list/contact-list.component';
+import { ContactDetailComponent } from './contact-detail/contact-detail.component';
+import { ContactUpdateComponent } from './contact-update/contact-update.component';
+import { ContactTrashComponent } from './contact-trash/contact-trash.component';
 
 
 
@@ -46,24 +50,37 @@ import { ProjectsModule } from './projects/projects.module';
     ProjetsComponent,
 
 
+
     ForumComponent,
 
     MenuComponent,
+
+    RessourcesComponent,
       LoginComponent,
       SignupComponent,
-      ListForumComponent
+      ListForumComponent,
+      ContactAddComponent,
+      ContactListComponent,
+      ContactDetailComponent,
+      ContactUpdateComponent,
+      ContactTrashComponent
 
 
   ],
   imports: [
-    FormsModule,
     BrowserModule,
     AppRoutingModule,
+
+
+    FormsModule,
+
+
     HttpClientModule,
     ReactiveFormsModule,
+
     CommonModule,
-      NgbModule,
-     ProjectsModule
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]
