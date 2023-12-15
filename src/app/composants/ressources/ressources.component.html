@@ -13,7 +13,7 @@
 
     <div class="" (click)="getAllCategoriesEntrepreneria()">
       <img src="https://img.freepik.com/free-photo/portrait-attractive-cuban-woman-presenting-statistical-information-her-unrecognizable-boss_1098-20618.jpg?w=740&t=st=1702137423~exp=1702138023~hmac=4fc9d885731e6183e09213931c0718b2553c9c415234341ec2a44668ab49f40a" alt="">
-      <h5>Entreprenaria</h5>
+      <h5>Entrepreunariat</h5>
     </div>
 
     <div class="agriculture">
@@ -33,61 +33,59 @@
 
   </div>
 
-  <h1 class="text-center">Catégorie 1</h1>
+  <h1 class="text-center">Nos Ressources</h1>
 
 <div class="container">
   <!-- Toutes les reoouserce -->
   <div class="bloccarte">
-    <div class="carte mt-5" *ngFor="let ressource of afficherRssources" ngIf="allRessource">
+    <div class="carte mt-5" >
       <div class="card-body" >
         <div class="carteh1">
-          <h5 class="card-title text-center">Etape {{ressource.id}} {{ressource.titre}} </h5>
+          <h5 class="card-title text-center">Etape 1</h5>
         </div>
-        <h4 class="text-center">Introduction {{ressource.objectif}}</h4>
-        <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.... {{ressource.consigne}}</p>
+        <h4 class="text-center">Introduction </h4>
+        <p class="card-text">Notre processus entrepreneurial débute par une analyse méticuleuse du marché, scrutant les tendances et décelant les opportunités clés..... </p>
         <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
-        <button class="mt-3">Voir plus</button>
+        <!-- <button class="mt-3">Voir plus</button> -->
       </div>
     </div>
-  </div>
 
-    <!-- Ressources informatique -->
-    <div class="bloccarte">
-      <div class="carte mt-5" *ngFor="let ressource of tabAllCategoriesInformatiques" ngIf="allRessourceInformatique">
-        <div class="card-body" >
-          <div class="carteh1">
-            <h5 class="card-title text-center">Etape {{ressource.id}} {{ressource.titre}} </h5>
-          </div>
-          <h4 class="text-center">Introduction {{ressource.objectif}}</h4>
-          <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.... {{ressource.consigne}}</p>
-          <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
-          <button class="mt-3">Voir plus</button>
+    <div class="carte mt-5" >
+      <div class="card-body" >
+        <div class="carteh1">
+          <h5 class="card-title text-center">Etape 2</h5>
         </div>
+        <h4 class="text-center">Introduction </h4>
+        <p class="card-text">Notre processus entrepreneurial débute par une analyse méticuleuse du marché, scrutant les tendances et décelant les opportunités clés..... </p>
+        <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
+        <!-- <button class="mt-3">Voir plus</button> -->
       </div>
     </div>
 
-    <!-- Ressources entrepreneriat -->
-    <div class="bloccarte">
-      <div class="carte mt-5" *ngFor="let ressource of tabAllCategoriesEntrepreneriat" ngIf="allRessourceEntrepreneriat">
-        <div class="card-body" >
-          <div class="carteh1">
-            <h5 class="card-title text-center">Etape {{ressource.id}} {{ressource.titre}} </h5>
-          </div>
-          <h4 class="text-center">Introduction {{ressource.objectif}}</h4>
-          <p class="card-text">Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression.... {{ressource.consigne}}</p>
-          <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
-          <button class="mt-3">Voir plus</button>
+    <div class="carte mt-5" >
+      <div class="card-body" >
+        <div class="carteh1">
+          <h5 class="card-title text-center">Etape 3</h5>
         </div>
+        <h4 class="text-center">Introduction </h4>
+        <p class="card-text">Notre processus entrepreneurial débute par une analyse méticuleuse du marché, scrutant les tendances et décelant les opportunités clés..... </p>
+        <!-- <h4 class="text-center">Introduction {{ressource.etat}}</h4> -->
+        <!-- <button class="mt-3">Voir plus</button> -->
       </div>
     </div>
-    
 
-  </div>
 
+</div>
+<div class="row" class="mt-5 offset-1" style="display: flex;">
+<div class="col-6"><iframe width="560" height="315" src="https://www.youtube.com/embed/dAUL0es8kRI?si=vyWqpASsB1GaQYi0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+<div class="col-6"><iframe width="560" height="315" src="https://www.youtube.com/embed/utQLvM6Y2Ts?si=Tgl3AqcmiplQwrD3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+</div>
 </div>
 
 <!-- ajouter une catégorie -->
-<form (ngSubmit)="addNewRessources()">
+<!-- <form (ngSubmit)="addNewRessources()">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Titre </label>
     <input type="text" class="form-control" [(ngModel)]="titre" name="titre" required >
@@ -105,11 +103,11 @@
     <input type="text" class="form-control" [(ngModel)]="etat" name="etat" required  >
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form> -->
 
 
 <!-- modifier une catégorie -->
-<form>
+<!-- <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Titre </label>
     <input type="text" class="form-control" [(ngModel)]="modificationRessource.titre" name="titre" required value="{{titre}}" >
@@ -127,5 +125,5 @@
     <input type="text" class="form-control" [(ngModel)]="modificationRessource.etat" name="etat" required value="{{etat}}" >
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</form> -->
 <app-footer></app-footer>

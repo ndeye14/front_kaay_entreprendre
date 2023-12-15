@@ -41,7 +41,7 @@ export class LoginComponent {
           }
           else
           {
-            this.router.navigate(['/forum']);
+            this.router.navigate(['/dash']);
           }
         }),
         catchError(error => {

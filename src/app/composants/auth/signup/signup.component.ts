@@ -13,8 +13,6 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class SignupComponent implements OnInit{
 
-
-
   signupForm!: FormGroup;
   loading!: boolean;
   errorMsg!: string;

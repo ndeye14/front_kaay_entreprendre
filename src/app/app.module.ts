@@ -1,8 +1,9 @@
+// app.module.ts
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './composants/header/header.component';
@@ -14,20 +15,17 @@ import { ConditionsGeneralesComponent } from './composants/conditions-generales/
 import { PageaccueilComponent } from './composants/pageaccueil/pageaccueil.component';
 import { AproposComponent } from './composants/apropos/apropos.component';
 import { ProjetsComponent } from './composants/projets/projets.component';
-
 import { ForumComponent } from './composants/forum/forum.component';
-
 import { MenuComponent } from './composants/menu/menu.component';
 import { RessourcesComponent } from './composants/ressources/ressources.component';
-import { FormsModule } from '@angular/forms';
-
 import { LoginComponent } from './composants/auth/login/login.component';
-import { SignupComponent } from './composants/auth/signup/signup.component';
 import { ListForumComponent } from './composants/list-forum/list-forum.component';
-
 import { CommonModule } from '@angular/common';
-
-
+import { FormsModule } from '@angular/forms';
+import { PartageExperienceComponent } from './partage-experience/partage-experience.component';
+import { SignupComponent } from './composants/auth/signup/signup.component';
+import { GuidesComponent } from './composants/guides/guides.component';
+import { ForumAdComponent } from './forum-ad/forum-ad.component';
 
 @NgModule({
   declarations: [
@@ -38,44 +36,28 @@ import { CommonModule } from '@angular/common';
     FooterComponent,
     PolitiquesConfidentialitesComponent,
     ConditionsGeneralesComponent,
-
     PageaccueilComponent,
     AproposComponent,
     ProjetsComponent,
-
-
-
     ForumComponent,
-
     MenuComponent,
-
     RessourcesComponent,
-      LoginComponent,
-      SignupComponent,
-      ListForumComponent
-
-
+    LoginComponent,
+    SignupComponent,
+    ListForumComponent,
+    PartageExperienceComponent,
+    GuidesComponent,
+    ForumAdComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
-<<<<<<< HEAD
-    // HttpClientModule,
-=======
->>>>>>> 2c46919d067d57c348a84cca31c18cbe793f3bfe
-
     FormsModule,
-
-
     HttpClientModule,
     ReactiveFormsModule,
-
     CommonModule,
-
-
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

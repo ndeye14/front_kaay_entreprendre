@@ -104,14 +104,7 @@ export class UserService {
       })
     );
   }
-  logOut() {
-    return this.http.get<any>('http://127.0.0.1:8000/api/logout').pipe(
-      tap(({ userId, token }) => {
-        this.userId = userId;
-        // on met à je la val de isAuth$
-      })
-    );
-  }
+
 
 
 
@@ -122,7 +115,7 @@ export class UserService {
         this.userId = '';
         this.isAuth$.next(false);
         this.isAdmin$.next(false);
-        this.router.navigate(['login']);
+        //this.router.navigate(['login']);
       })
     );
     // On vide les infos du token et on met à je la val de isAuth$ 

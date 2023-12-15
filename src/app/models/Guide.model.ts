@@ -1,5 +1,5 @@
 
 export class Guide {
-  titre!: string;
+  titre: any;
   description!: string;
 }

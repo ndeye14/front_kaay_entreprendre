@@ -5,6 +5,7 @@ import Swal from 'sweetalert2';
 import { HeaderConnecteComponent } from '../header-connecte/header-connecte.component';
 import { UserService } from 'src/app/services/user.service';
 
+
 @Component({
   selector: 'app-auth',
   templateUrl: './auth.component.html',

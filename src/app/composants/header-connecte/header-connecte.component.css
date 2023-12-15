@@ -81,6 +81,10 @@
   color: #fff;
 } */
 
+.navbar .links a:focus-within{
+  color: #FF9700;
+}
+
 .hero-section {
   display: flex;
   justify-content: space-evenly;

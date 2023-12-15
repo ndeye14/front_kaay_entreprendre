@@ -42,8 +42,8 @@
 }
 .bloccarte{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /* justify-content: space-evenly; */
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
 }
 .carte{
   height: 350px;

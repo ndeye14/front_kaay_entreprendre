@@ -8,7 +8,6 @@ import { PolitiquesConfidentialitesComponent } from './composants/politiques-con
 import { HeaderConnecteComponent } from './composants/header-connecte/header-connecte.component';
 import { DomainesComponent } from './composants/domaines/domaines.component';
 import { DashComponent } from './composants/dash/dash.component';
-import { GuidesComponent } from './composants/guides/guides.component';
 import { MenuComponent } from './composants/menu/menu.component';
 import { SettingProfilComponent } from './composants/setting-profil/setting-profil.component';
 import { ProfilComponent } from './composants/profil/profil.component';
@@ -26,14 +25,18 @@ import { ModificationComponent } from './composants/modification/modification.co
 import { UtilisateursComponent } from './composants/utilisateurs/utilisateurs.component';
 import { GestionsCommentairesComponent } from './composants/gestions-commentaires/gestions-commentaires.component';
 import { ProjectsComponent } from './composants/projects/projects.component';
+import { PartageExperienceComponent } from './partage-experience/partage-experience.component';
+import { GuidesComponent } from './composants/guides/guides.component';
+import { ForumAdComponent } from './forum-ad/forum-ad.component';
 
 
 
 
 const routes: Routes = [
-   {path: '', redirectTo: '/home', pathMatch: 'full' },
+   {path: '', redirectTo: '/pageacceuil', pathMatch: 'full' },
    { path: 'login', component: AuthComponent },
    { path: 'home', component: HeaderComponent },
+   {path: 'partage', component: PartageExperienceComponent },
    { path: 'accueil', component: HeaderConnecteComponent },
   { path: 'politiqueConfidenialite', component: PolitiquesConfidentialitesComponent },
   { path: 'conditionUtilisation', component: ConditionsGeneralesComponent },
@@ -50,12 +53,12 @@ const routes: Routes = [
 
   { path: 'forum', component: ForumComponent },
   { path: 'listForum', component:ListForumComponent },
+  { path: 'guides', component:GuidesComponent },
 
 
 
 
   { path: 'dash', component : DashComponent},
-  { path: 'guides', component: GuidesComponent},
   { path: 'domaines', component: DomainesComponent },
   { path: 'profil', component: ProfilComponent},
   { path: 'setting',component:SettingProfilComponent},
@@ -63,7 +66,8 @@ const routes: Routes = [
   {path:'projects',component:ProjectsComponent },
   {path:'users',component:UtilisateursComponent},
   {path:'commentaires',component:GestionsCommentairesComponent },
-  {path:'informations',component:ModificationComponent}
+  {path:'informations',component:ModificationComponent},
+  {path:'forumad',component:ForumAdComponent}
 
 
 
