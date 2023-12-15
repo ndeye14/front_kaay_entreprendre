@@ -29,6 +29,7 @@ import { ProjectsComponent } from './composants/projects/projects.component';
 import { PartageExperienceComponent } from './partage-experience/partage-experience.component';
 import { GuidesComponent } from './composants/guides/guides.component';
 import { ForumAdComponent } from './forum-ad/forum-ad.component';
+import { ProjetsComponent } from './composants/projets/projets.component';
 
 
 

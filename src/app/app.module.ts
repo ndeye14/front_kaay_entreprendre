@@ -26,6 +26,7 @@ import { PartageExperienceComponent } from './partage-experience/partage-experie
 import { SignupComponent } from './composants/auth/signup/signup.component';
 import { GuidesComponent } from './composants/guides/guides.component';
 import { ForumAdComponent } from './forum-ad/forum-ad.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { ForumAdComponent } from './forum-ad/forum-ad.component';
     GuidesComponent,
     ForumAdComponent,
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
